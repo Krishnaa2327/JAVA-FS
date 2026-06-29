@@ -1,36 +1,24 @@
 package com.mmcoe.ipl;
 
 public class Team {
-	private String teamName;
-	private Player[] players;
-	private int count;
-	
-	public Team(String teamName) {
+    private int teamId;
+    private String teamName;
+
+    public Team(int teamId, String teamName) {
+        this.teamId = teamId;
         this.teamName = teamName;
-        players = new Player[16];
     }
-	
-	
-	public String getTeamName() {
-		return teamName;
-	}
 
+    public int getTeamId() {
+        return teamId;
+    }
 
-	public void addPlayers(Player p) {
-		if(count == players.length) {
-            System.out.println("Team is Full");
-            return;
-        }
-        players[count++] = p;
-	}
-	
-	
-	public void printPlayers() {
-		System.out.println("\nPlayers of " + teamName);
+    public String getTeamName() {
+        return teamName;
+    }
 
-        for(int i=0;i<count;i++) {
-            System.out.println(players[i]);
-        }
-	}
-	
+    @Override
+    public String toString() {
+        return teamName;
+    }
 }

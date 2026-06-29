@@ -1,43 +1,75 @@
-// Day-4 Assignment
-
 package com.mmcoe.ipl;
+
 import java.util.Scanner;
 
 public class TestIPL {
-
-    public static void main(String[] args) {
-        IPL ipl = new IPL();
-
-        Team rcb = new Team("RCB");
-        rcb.addPlayers(new Player("Virat Kohli",21.0));
-        rcb.addPlayers(new Player("Rajat Patidar",11.0));
-        rcb.addPlayers(new Player("Josh Hazlewood",12.5));
-
-        Team mi = new Team("MI");
-        mi.addPlayers(new Player("Jasprit Bumrah",18.0));
-        mi.addPlayers(new Player("Hardik Pandya",16.0));
-        mi.addPlayers(new Player("Rohit Sharma",16.3));
-
-        Team csk = new Team("CSK");
-        csk.addPlayers(new Player("MS Dhoni",14.0));
-        csk.addPlayers(new Player("Ravindra Jadeja",18.0));
-        csk.addPlayers(new Player("R Ashwin",9.75));
-
-        ipl.addTeam(rcb);
-        ipl.addTeam(mi);
-        ipl.addTeam(csk);
+    public static void main(String[] args) throws IplException {
 
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter Team Name : ");
-        String teamName = sc.nextLine();
-        Team team = ipl.searchTeam(teamName);
+        IPL ipl = new IPL();
+        int choice;
+        do {
+            System.out.println("\n===== IPL MANAGEMENT =====");
+            System.out.println("1. Add Team");
+            System.out.println("2. Add Player");
+            System.out.println("3. Display Team Players");
+            System.out.println("4. Display All Teams");
+            System.out.println("5. Exit");
+            System.out.print("Enter Choice : ");
 
-        if(team != null) {
-            team.printPlayers();
-        }
-        else {
-            System.out.println("Team Not Found");
-        }
+            choice = sc.nextInt();
+            switch(choice) {
+            case 1:
+                    System.out.print("Enter Team ID : ");
+                    int id = sc.nextInt();
+                    sc.nextLine();
+
+                    System.out.print("Enter Team Name : ");
+                    String teamName = sc.nextLine();
+                    ipl.addTeam(new Team(id, teamName));
+                    System.out.println("Team Added Successfully");
+                    break;
+
+            case 2:
+                    sc.nextLine();
+                    System.out.print("Enter Team Name : ");
+                    String teamName1 = sc.nextLine();
+
+                    System.out.print("Enter Jersey Number : ");
+                    int jersey = sc.nextInt();
+                    sc.nextLine();
+
+                    System.out.print("Enter Player Name : ");
+                    String playerName = sc.nextLine();
+
+                    System.out.print("Enter Bid Amount : ");
+                    double bid = sc.nextDouble();
+
+                    ipl.addPlayer(teamName1, new Player(jersey, playerName, bid));
+                    System.out.println("Player Added Successfully");
+                    break;
+
+            case 3:
+                sc.nextLine();
+                System.out.print("Enter Team Name : ");
+                String teamName11 = sc.nextLine();
+                ipl.displayPlayers(teamName11);
+                break;
+
+            case 4:
+                ipl.displayAllTeams();
+                break;
+
+            case 5:
+                System.out.println("Thank You");
+                break;
+
+            default:
+                System.out.println("Invalid Choice");
+            }
+
+        } while(choice != 5);
+        
         sc.close();
     }
 }

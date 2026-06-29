@@ -1,0 +1,152 @@
+===== IPL MANAGEMENT =====
+1. Add Team
+2. Add Player
+3. Display Team Players
+4. Display All Teams
+5. Exit
+Enter Choice : 1
+Enter Team ID : 101
+Enter Team Name : MI
+Team Added Successfully
+
+===== IPL MANAGEMENT =====
+1. Add Team
+2. Add Player
+3. Display Team Players
+4. Display All Teams
+5. Exit
+Enter Choice : 2
+Enter Team Name : MI
+Enter Jersey Number : 10
+Enter Player Name : Rohit Sharma
+Enter Bid Amount : 25
+Player Added Successfully
+
+===== IPL MANAGEMENT =====
+1. Add Team
+2. Add Player
+3. Display Team Players
+4. Display All Teams
+5. Exit
+Enter Choice : 2
+Enter Team Name : MI
+Enter Jersey Number : 1
+Enter Player Name : Jasprit Bumrah
+Enter Bid Amount : 20
+Player Added Successfully
+
+===== IPL MANAGEMENT =====
+1. Add Team
+2. Add Player
+3. Display Team Players
+4. Display All Teams
+5. Exit
+Enter Choice : 1
+Enter Team ID : 102
+Enter Team Name : RCB
+Team Added Successfully
+
+===== IPL MANAGEMENT =====
+1. Add Team
+2. Add Player
+3. Display Team Players
+4. Display All Teams
+5. Exit
+Enter Choice : 2
+Enter Team Name : RCB
+Enter Jersey Number : 18
+Enter Player Name : Virat Kohli
+Enter Bid Amount : 25
+Player Added Successfully
+
+===== IPL MANAGEMENT =====
+1. Add Team
+2. Add Player
+3. Display Team Players
+4. Display All Teams
+5. Exit
+Enter Choice : 2
+Enter Team Name : RCB
+Enter Jersey Number : 1
+Enter Player Name : Rajat patidar
+Enter Bid Amount : 20
+Player Added Successfully
+
+===== IPL MANAGEMENT =====
+1. Add Team
+2. Add Player
+3. Display Team Players
+4. Display All Teams
+5. Exit
+Enter Choice : 1
+Enter Team ID : 103
+Enter Team Name : CSK
+Team Added Successfully
+
+===== IPL MANAGEMENT =====
+1. Add Team
+2. Add Player
+3. Display Team Players
+4. Display All Teams
+5. Exit
+Enter Choice : 2
+Enter Team Name : CSK
+Enter Jersey Number : 7
+Enter Player Name : MS Dhoni
+Enter Bid Amount : 25
+Player Added Successfully
+
+===== IPL MANAGEMENT =====
+1. Add Team
+2. Add Player
+3. Display Team Players
+4. Display All Teams
+5. Exit
+Enter Choice : 2
+Enter Team Name : CSK
+Enter Jersey Number : 1
+Enter Player Name : Ruturaj Gaikwad
+Enter Bid Amount : 20
+Player Added Successfully
+
+===== IPL MANAGEMENT =====
+1. Add Team
+2. Add Player
+3. Display Team Players
+4. Display All Teams
+5. Exit
+Enter Choice : 4
+
+Team : MI
+10	Rohit Sharma	₹25.0 Cr
+1	Jasprit Bumrah	₹20.0 Cr
+
+Team : RCB
+18	Virat Kohli	₹25.0 Cr
+1	Rajat patidar	₹20.0 Cr
+
+Team : CSK
+7	MS Dhoni	₹25.0 Cr
+1	Ruturaj Gaikwad	₹20.0 Cr
+
+===== IPL MANAGEMENT =====
+1. Add Team
+2. Add Player
+3. Display Team Players
+4. Display All Teams
+5. Exit
+Enter Choice : 3
+Enter Team Name : MI
+
+Players of MI
+10	Rohit Sharma	₹25.0 Cr
+1	Jasprit Bumrah	₹20.0 Cr
+
+===== IPL MANAGEMENT =====
+1. Add Team
+2. Add Player
+3. Display Team Players
+4. Display All Teams
+5. Exit
+Enter Choice : 5
+Thank You

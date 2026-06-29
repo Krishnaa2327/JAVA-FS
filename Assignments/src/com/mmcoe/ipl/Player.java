@@ -1,27 +1,32 @@
 package com.mmcoe.ipl;
 
 public class Player {
-	private String Name;
-	private Double BidAmount;
+	private String playerName;
+	private int jerseyNumber;
+	private double bidAmount;
 		
-	public Player(String name, Double bidAmount) {
-		super();
-		Name = name;
-		BidAmount = bidAmount;
-	}
+	public Player(int jerseyNumber, String playerName, double bidAmount) {
+        this.jerseyNumber = jerseyNumber;
+        this.playerName = playerName;
+        this.bidAmount = bidAmount;
+    }
 
-	public String getName() {
-		return Name;
-	}
+    public int getJerseyNumber() {
+        return jerseyNumber;
+    }
 
-	public Double getBidAmount() {
-		return BidAmount;
-	}
+    public String getPlayerName() {
+        return playerName;
+    }
 
-	@Override
-	public String toString() {
-		return "Player [Name= " + Name + ", Bid Amount= " + BidAmount + " Cr ]";
-	}
+    public double getBidAmount() {
+        return bidAmount;
+    }
+
+    @Override
+    public String toString() {
+        return jerseyNumber + "\t" + playerName + "\t₹" + bidAmount + " Cr";
+    }
 	
 	
 }
