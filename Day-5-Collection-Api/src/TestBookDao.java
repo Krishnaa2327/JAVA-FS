@@ -5,7 +5,7 @@ import com.mmcoe.service.BookNotFoundException;
 import com.mmcoe.service.BookService;
 import com.mmcoe.service.BookServiceImpl;
 
-public class TestBookService {
+public class TestBookDao {
 
 	public static void main(String[] args) {
 		BookDao dao = new BookDaoCollectionImpl();
